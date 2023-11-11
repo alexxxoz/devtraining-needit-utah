@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="61611efa2f8631107f8957892799b6e3" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="human resources" label="Request type" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources" sequence="0" value="human resources"/>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="HR1" label="What Needed" mandatory="true" max_length="40" name="u_choice_5" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources" sequence="0" value="HR1"/>
+                <element inactive_on_update="false" label="Human Resources 2" sequence="1" value="HR2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="2" value="legal 1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="3" value="legal 2"/>
+                <element inactive_on_update="false" label="facilities 1" sequence="4" value="facilities 1"/>
+                <element inactive_on_update="false" label="Facilities 2" sequence="5" value="facilities 2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="New Date/Time" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="New Reference" max_length="32" name="u_reference_3" reference="cmdb_multisource_deny_class" type="reference"/>
+    </element>
+</database>
